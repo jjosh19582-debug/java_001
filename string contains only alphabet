@@ -1,0 +1,15 @@
+// Java program to check if a string contains only alphabets
+import java.util.*;
+
+public class StringMatches {
+
+    public static void main(String[] args) {
+
+        String s = "JavaProgramming";
+
+        // Check if the string contains only alphabets
+        boolean r = s.matches("[a-zA-Z]+"); // Matches only alphabets (case-insensitive)
+
+        System.out.println("" + r);
+    }
+}
