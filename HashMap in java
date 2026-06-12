@@ -1,0 +1,26 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class GFG {
+
+    public static void main(String[] args) {
+
+        // Create a HashMap
+        HashMap<String, Integer> hashMap = new HashMap<>();
+
+        // Add elements to the HashMap
+        hashMap.put("John", 25);
+        hashMap.put("Jane", 30);
+        hashMap.put("Jim", 35);
+
+        // Access elements using get()
+        System.out.println("Age of John: " + hashMap.get("John"));
+        System.out.println("Age of Jane: " + hashMap.get("Jane"));
+
+        // Iterate through the HashMap
+        System.out.println("\nAll entries:");
+        for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
+        }
+    }
+}
